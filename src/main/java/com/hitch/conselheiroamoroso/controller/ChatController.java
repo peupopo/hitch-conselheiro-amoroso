@@ -1,6 +1,6 @@
 package com.hitch.conselheiroamoroso.controller;
 
-import org.springframework.ai.chat.client.ChatClient;
+import com.hitch.conselheiroamoroso.service.ChatService;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.Map;
@@ -8,21 +8,18 @@ import java.util.Map;
 @RestController
 public class ChatController {
 
-    private final ChatClient chatClient;
+    private final ChatService chatService;
 
-    public ChatController(ChatClient chatClient) {
-        this.chatClient = chatClient;
+    public ChatController(ChatService chatService) {
+        this.chatService = chatService;
     }
 
     @PostMapping("/chat")
     public Map<String, String> chat(@RequestBody Map<String, String> request) {
-        String input = request.get("message");
-
-        String response = chatClient.prompt()
-                .user(input)
-                .call()
-                .content();
+        String message = request.get("message");
+        String response = chatService.getResponse(message);
 
         return Map.of("response", response);
     }
+
 }
