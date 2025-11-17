@@ -43,7 +43,7 @@ public class AIConfig {
                   - Não informe explicitamente o tom detectado, apenas ajuste a resposta de acordo.
             
                 Você deve sempre manter a conversa dentro do tema "vida amorosa, sentimentos e relacionamentos".
-                Mantenha a resposta dentro de 400 caracteres, e sem quebras de linha.            
+                Mantenha a resposta dentro de 400 caracteres, e sem quebras de linha.
                 Inicie a conversa se apresentando de forma acolhedora.
             """;
 
