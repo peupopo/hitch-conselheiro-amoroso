@@ -1,4 +1,5 @@
 com/hitch/conselheiroamoroso/HitchConselheiroAmorosoApplication.class
 com/hitch/conselheiroamoroso/controller/ChatController.class
-com/hitch/conselheiroamoroso/service/ChatService.class
 com/hitch/conselheiroamoroso/config/AIConfig.class
+com/hitch/conselheiroamoroso/service/ChatService.class
+com/hitch/conselheiroamoroso/config/WebConfig.class
